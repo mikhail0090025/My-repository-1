@@ -1,0 +1,32 @@
+.TopPanel {
+	background: #dd5566;
+	padding: 20px;
+}
+a{
+	color: #25ce12;
+	background: #cc4455;
+	padding: 15px;
+	margin: 5px;
+	font-family: Arial;
+}
+.Ad{
+	padding: 20px;
+	background: #aaffaa;
+	color: #ffaaff;
+}
+.TopPanel:hover {
+	background: #dd9966;
+	padding: 20px;
+}
+a:hover{
+	color: #ce2512;
+	background: #44cc55;
+	padding: 15px;
+	margin: 5px;
+	font-family: Arial;
+}
+.Ad:hover{
+	padding: 20px;
+	background: #ffaaff;
+	color: #aaffaa;
+}

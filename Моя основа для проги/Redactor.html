@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Redactor</title>
+	<link rel="stylesheet" href="css/StyleRedactor.css">
+	<link rel="stylesheet" href="js/RedactorNewObj.js">
+</head>
+<body>
+	<script>alert('Загрузить редактор?'); document.write('Загрузка успешна!');</script>
+	<h1>Редактор</h1>
+	<div class="MainRedactor" id="Redactor"><button style="margin: 10px;" onclick="	var t = new Button();
+	alert(t);">Новый обьект</button></div>
+    <h2>Настройки</h2>
+    <button onclick="var col = 1; if(col == 1){col = 0; document.getElementById('Redactor').style.background = '#aaa';} else{col = 1; document.getElementById('Redactor').style.background = '#444';}">Цвет редактора</button>
+    <a href="" download>Скачать</a>
+    <a href="Redactor.html" onclick="prompt('Действительно? Все несохраненные данные будут утеряны!')">Сбросить все изменения</a>
+    </p>
+</body>
+</html>

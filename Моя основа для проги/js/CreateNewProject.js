@@ -1,0 +1,3 @@
+function CreateNewProject() {
+	alert('fuyiehfiuewyrefyrgi');
+}

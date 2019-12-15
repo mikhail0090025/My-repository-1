@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Новый проект</title>
+	<link rel="stylesheet" href="css/MainPageStyle.css">
+	<link rel="stylesheet" href="js/CreateNewProject.js">
+</head>
+<body>
+		<div class="TopPanel"><a href="Main.html">Главная страница</a><br>
+	<br>
+	<br><a href="MyProjects.html">Мои проекты</a></div>
+	<div class="Ad">Здесь могла быть ваша реклама. <a href="AdInPage.html">Хочу узнать подробнее!</a></div>
+	<h1>Новый проект</h1>
+	<p>Имя вашего проекта:</p>
+	<input type="text" id="NameProj">
+	<p>Пароль: (Это надо для того, что бы к вашему проекту не получил доступ злоумышленник)</p>
+	<input type="password">
+	<p>Укажите, в чем именно вы будете делать проект:</p>
+	<select name="LanguageProgramming" id="94673582164359846">
+		<option value="1">C#</option>
+		<option value="2">C++</option>
+		<option value="3">Unity</option>
+		<option value="4">C</option>
+		<option value="5">Наш движок разработки</option>
+	</select><br>
+	<input type="checkbox" readonly="true" title="Внимание! PRO возможности активны ТОЛЬКО в PRO версии!">PRO возможности<br>
+	<button onclick="javascript:CreateNewProject();">Создать проект</button>
+</body>
+</html>
