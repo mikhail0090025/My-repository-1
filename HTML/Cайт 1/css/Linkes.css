@@ -1,0 +1,16 @@
+.Link{
+	background: red;
+	margin: 20px;
+	border: 2px solid lightgreen;
+	font-size: 20px;
+	padding: 10px;
+	color: green;
+}
+.Link:hover{
+	background: lightgreen;
+	margin-top: 20px;
+	border: 1px solid red;
+	font-size: 23px;
+	padding: 8px;
+	color: green;
+}
