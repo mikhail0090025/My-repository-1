@@ -1,0 +1,9 @@
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\bin\Debug\Game Engine 2d.exe.config
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\bin\Debug\Game Engine 2d.exe
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\bin\Debug\Game Engine 2d.pdb
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game Engine 2d.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game_Engine_2d.MainForm.resources
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game Engine 2d.csproj.GenerateResource.Cache
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game Engine 2d.exe
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game Engine 2d.pdb
+D:\GitHubProjects\C#\Game Engine 2d\Game Engine 2d\obj\Debug\Game_Engine_2d.FormNewObject.resources
