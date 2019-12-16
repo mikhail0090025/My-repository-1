@@ -1,0 +1,397 @@
+/// <reference path="./support.form.params.ts"/>
+var SupportForm = /** @class */ (function () {
+    function SupportForm() {
+        this.modalIssuesFormID = "modalSupportWindow";
+        this.modalFAQFormID = "modalFAQWindow";
+        this.gameClient = null;
+        this.gameData = null;
+        this.onFAQHidden = null;
+        this.supportData = null;
+    }
+    SupportForm.prototype.init = function (support_data) {
+        this.supportData = support_data;
+        this.addEventsListeners();
+        $('#error-message').hide();
+    };
+    SupportForm.prototype.show = function (game) {
+        this.gameClient = game;
+        if (this.modalFAQFormID) {
+            this.updateLocalization();
+            /*clear FAQ iframe*/
+            $('#hs-support-frame').attr('src', '');
+            /*open FAQ modal window*/
+            $('#' + this.modalFAQFormID).modal('show');
+        }
+    };
+    SupportForm.prototype.hide = function () {
+        $('.modal').modal('hide');
+    };
+    SupportForm.prototype.clearForm = function () {
+        var mailGroup = $('#email-group');
+        if (mailGroup.hasClass("has-error")) {
+            $('#email').val('');
+            mailGroup.removeClass('has-error');
+        }
+        $('#message-body').val('');
+        $('#message-group').removeClass('has-error');
+    };
+    SupportForm.prototype.showIssues = function () {
+        if (this.modalIssuesFormID) {
+            this.enableForm();
+            $('#' + this.modalIssuesFormID).modal({ backdrop: "static", keyboard: false });
+        }
+    };
+    SupportForm.prototype.updateLocalization = function () {
+        /*FAQ modal*/
+        $('#modalFAQWindowLabel').text("Social Quantum Служба поддержки");
+        /*Form modal*/
+        $('#modalSupportWindowLabel').text("Social Quantum Служба поддержки");
+        /*Issues form*/
+        $("label[for='email']").text("Ваш адрес электронной почты");
+        $("label[for='message-body']").text("Опишите свою проблему");
+        var optional = '<span class="text-muted"> (' + "необязательно" + ')</span>';
+        $("label[for='files-panel']").html("Приложить файлы").append(optional);
+        $("#choose-files").text("Выбрать файлы" + ' (' + SupportFormParams.MAX_IMAGE_SIZE / Math.pow(1024, 2) + 'MB)');
+        $("#issues-send-button").html("ОТПРАВИТЬ");
+        this.updateFilesCount.apply(this, [0]);
+    };
+    SupportForm.prototype.updateFilesCount = function (value) {
+        var filesPanelHeading = $('#files-panel').find('.panel-heading');
+        filesPanelHeading.text("Файлов выбрано:" + ': ' + value + '/' + SupportFormParams.MAX_FILES_COUNT);
+    };
+    /*posting*/
+    SupportForm.prototype.postIssue = function () {
+        this.genIssueData(function (formData) {
+            $.ajax({
+                url: this.supportData.create_issue_path,
+                type: 'POST',
+                data: formData,
+                contentType: false,
+                processData: false,
+                headers: {
+                    Accept: 'application/json',
+                    Authorization: this.supportData.create_issue_authorization
+                },
+                dataType: 'json',
+                success: $.proxy(this.onSuccess, this),
+                error: $.proxy(this.onError, this)
+            });
+        });
+    };
+    SupportForm.prototype.genIssueData = function (callback) {
+        var formData = new FormData();
+        var gameLog = null;
+        if (this.gameClient && typeof this.gameClient.getSupportData === 'function') {
+            this.gameData = this.gameClient.getSupportData();
+            try {
+                gameLog = this.gameClient.getLog();
+            }
+            catch (error) {
+                trace('[SupportForm.genIssueData]', error);
+            }
+        }
+        $(".modal-body :input").each(function (index, element) {
+            var input = $(element);
+            input.val() && (SupportFormParams.allowed_forms_id.indexOf(input.attr('id')) != -1) && formData.append(input.attr('id'), String(input.val()));
+        });
+        formData.append('platform-type', 'web');
+        formData.append('app-id', this.supportData.app_id);
+        /*append tags*/
+        var tags = [];
+        tags.push(this.supportData.app_tag);
+        tags.push(this.supportData.platform_tag);
+        tags.push("ru-RU");
+        formData.append('tags', JSON.stringify(tags));
+        /*append meta*/
+        var meta = {};
+        if (this.gameData) {
+            meta['user_level'] = this.gameData['custom_level'];
+            meta['user_payment_group'] = this.gameData['custom_payment_group'];
+            meta['user_memory_usage'] = this.gameData['custom_memory'];
+            meta['user_fps'] = this.gameData['custom_fps'];
+            meta['user_seconds_in_game'] = this.gameData['custom_time'];
+        }
+        meta['user_id'] = this.supportData.user_ID;
+        meta['user_app_key'] = this.supportData.app_tag;
+        meta['user_flash_player'] = this.supportData.flashPlayer;
+        meta['user_browser'] = this.supportData.browserVersion;
+        meta['user_language'] = this.supportData.language_tag["ru-RU"];
+        meta['user_platform'] = this.supportData.platform_tag;
+        formData.append('meta', JSON.stringify(meta));
+        /*append file*/
+        var zip = new JSZip();
+        var issueFiles = $('#issue-files')[0];
+        zip.file("browser.log", window['getTraceLog']());
+        gameLog && zip.file("game.log", gameLog);
+        if (issueFiles.files.length) {
+            var filesLoaded_1 = 0;
+            var file = void 0;
+            var _loop_1 = function (i) {
+                file = issueFiles.files[i];
+                if (file.size <= SupportFormParams.MAX_IMAGE_SIZE) {
+                    this_1.readFileData(file, function (file, fileData) {
+                        var fileName = 'file_' + i + '.' + file.name.split('.').pop();
+                        zip.file(fileName, fileData);
+                        if (++filesLoaded_1 == issueFiles.files.length) {
+                            this.generateZIPFile(zip, formData, callback);
+                        }
+                    });
+                }
+            };
+            var this_1 = this;
+            for (var i = 0; i < issueFiles.files.length; i++) {
+                _loop_1(i);
+            }
+        }
+        else {
+            this.generateZIPFile(zip, formData, callback);
+        }
+    };
+    SupportForm.prototype.readFileData = function (file, callback) {
+        var reader = new FileReader();
+        var support = this;
+        reader.onload = function (result) {
+            var fileData = result.target.result;
+            callback.apply(support, [file, fileData]);
+        };
+        reader.readAsArrayBuffer(file);
+    };
+    SupportForm.prototype.generateZIPFile = function (zip, formData, callback) {
+        var support = this;
+        zip.generateAsync({ type: "blob", compression: 'DEFLATE' }, function (meta) {
+            //trace(meta);
+        }).then(function (content) {
+            formData.append('attachment', content, 'files.zip');
+            callback.apply(support, [formData]);
+        });
+    };
+    SupportForm.prototype.onSuccess = function (data) {
+        trace('[SupportForm.onSuccess]', data);
+        this.hide();
+    };
+    SupportForm.prototype.onError = function (jqXHR, exception) {
+        this.printErrorMessage(jqXHR, exception);
+        $('#error-message').text("support_error_message").slideDown(300);
+        this.enableForm(true);
+    };
+    /*events*/
+    SupportForm.prototype.addEventsListeners = function () {
+        var modal = $('#' + this.modalIssuesFormID);
+        modal.on('show.bs.modal', $.proxy(this.onModalWindowShow, this));
+        modal.on('shown.bs.modal', $.proxy(this.onModalWindowShown, this));
+        modal.on('hidden.bs.modal', $.proxy(this.onModalWindowHidden, this));
+        var email = $('#email');
+        email.on('keyup keypress', this.disableEnterKey);
+        $('#choose-files').on('click', function () {
+            $('#issue-files').trigger("click");
+        });
+        email.focusout($.proxy(function () {
+            String(email.val()).length > 0 && this.checkEmail();
+        }, this));
+        var submit = modal.find('#issues-send-button');
+        submit.on("click", $.proxy(this.onSubmitButtonHandler, this));
+        modal = $('#' + this.modalFAQFormID);
+        modal.on('show.bs.modal', $.proxy(this.onModalWindowShow, this));
+        modal.on('hidden.bs.modal', $.proxy(this.onModalWindowHidden, this));
+        /*iframe event listener*/
+        window.addEventListener("message", $.proxy(this.onIssueButtonHandler, this));
+        $("#issue-files").on('change', $.proxy(this.onFilesSelectHandler, this));
+    };
+    SupportForm.prototype.onIssueButtonHandler = function (event) {
+        if (event.origin.indexOf("social-quantum.helpshift.com") !== -1) {
+            var msg = event.data.match(/^(?:HS:)(.*)/);
+            if (msg) {
+                var ev = JSON.parse(msg[1]);
+                if (ev.type === "report-issue-toggle" && ev.data.opened) {
+                    $('#' + this.modalFAQFormID).modal('hide');
+                    this.onFAQHidden = this.showIssues;
+                }
+            }
+        }
+    };
+    SupportForm.prototype.onFilesSelectHandler = function (event) {
+        var input = $('#issue-files').get(0);
+        var filesGroup = $('#files-list-group');
+        filesGroup.empty();
+        /*patch FileList*/
+        FileList.prototype['forEach'] = function (callback) {
+            [].forEach.call(this, callback);
+        };
+        this.updateFilesCount(input.files.length);
+        var panel = $('#files-panel');
+        var sendButton = $('#issues-send-button');
+        if (input.files.length > SupportFormParams.MAX_FILES_COUNT) {
+            trace('[SupportForm.onFilesSelectHandler]', 'Files count:', input.files.length);
+            panel.removeClass('panel-info').addClass('panel-danger');
+            sendButton.prop("disabled", true);
+        }
+        else {
+            panel.hasClass('panel-danger') && panel.removeClass('panel-danger').addClass('panel-info');
+            sendButton.prop("disabled", false);
+        }
+        for (var index = 0; index < input.files.length; index++) {
+            var file = input.files[index];
+            if (index <= 2) {
+                /*check allowed file formats*/
+                if (SupportFormParams.allowed_file_formats.indexOf(file.type) == -1) {
+                    !sendButton.is(':disabled') && sendButton.prop("disabled", true);
+                    var fileFormatError = "support_form_file_format_error";
+                    filesGroup.append('<li class="text-danger" style="margin-left: -25px;"><strong>' + file.name + '</strong> - ' + fileFormatError + '</li>');
+                    panel.hasClass('panel-info') && panel.removeClass('panel-info').addClass('panel-danger');
+                }
+                /*check file size*/
+                else if (file.size > SupportFormParams.MAX_IMAGE_SIZE) {
+                    !sendButton.is(':disabled') && sendButton.prop("disabled", true);
+                    var fileToLargeText = "support_form_file_to_large";
+                    filesGroup.append('<li class="text-danger" style="margin-left: -25px;"><strong>' + file.name + '</strong> - ' + fileToLargeText + '</li>');
+                    panel.hasClass('panel-info') && panel.removeClass('panel-info').addClass('panel-danger');
+                }
+                else {
+                    filesGroup.append('<li style="margin-left: -25px;">' + file.name + '</li>');
+                }
+            }
+            else if (index == 3) {
+                filesGroup.append('<li class="text-danger" style="margin-left: -25px;"> ... </li>');
+            }
+        }
+    };
+    SupportForm.prototype.disableEnterKey = function (event) {
+        var keyCode = event.keyCode || event.which;
+        if (keyCode === 13) {
+            event.preventDefault();
+            return false;
+        }
+    };
+    SupportForm.prototype.onModalWindowShow = function (event) {
+        flash_app().style.marginLeft = "10000px";
+        if ($(event.target).attr('id') === this.modalIssuesFormID) {
+            this.setFocus();
+        }
+        else {
+            var faqPath = this.supportData.faq_path.replace('{lang}', "ru-RU");
+            $('#hs-support-frame').attr('src', faqPath);
+            // this.onModalWindowCallback(event);
+        }
+    };
+    SupportForm.prototype.onModalWindowShown = function (event) {
+        if ($(event.target).attr('id') === this.modalIssuesFormID) {
+            this.setFocus();
+        }
+    };
+    SupportForm.prototype.onModalWindowHidden = function (event) {
+        flash_app().style.marginLeft = "0px";
+        if (this.onFAQHidden) {
+            this.onFAQHidden.apply(this);
+            this.onFAQHidden = null;
+            $('#hs-support-frame').attr('src', '');
+        }
+        else {
+            this.enableForm();
+            this.clearForm();
+            // this.onModalWindowCallback(event);
+        }
+    };
+    SupportForm.prototype.onSubmitButtonHandler = function (event) {
+        $('#error-message').hide();
+        if (this.validateForm()) {
+            this.disableForm();
+            this.postIssue();
+        }
+    };
+    /*vew*/
+    SupportForm.prototype.setFocus = function () {
+        var mailInput = $('#email');
+        this.validateEmail(mailInput.val()) ? $('#message-body').focus() : mailInput.focus();
+    };
+    SupportForm.prototype.validateForm = function () {
+        /*check message*/
+        !this.checkMessage() && $('#message-body').focus();
+        /*check email*/
+        !this.checkEmail() && $('#email').focus();
+        return !$('#email-group').hasClass('has-error') && !$('#message-group').hasClass('has-error');
+    };
+    SupportForm.prototype.checkEmail = function () {
+        var email = $('#email');
+        if (!this.validateEmail(email.val())) {
+            $('#email-group').addClass('has-error');
+            return false;
+        }
+        else {
+            $('#email-group').removeClass('has-error');
+            return true;
+        }
+    };
+    SupportForm.prototype.checkMessage = function () {
+        var messageInputGroup = $('#message-group');
+        var message = $('#message-body').val();
+        if (message == null || message == '' || !message.trim()) {
+            messageInputGroup.addClass('has-error');
+            return false;
+        }
+        else {
+            messageInputGroup.removeClass('has-error');
+            return true;
+        }
+    };
+    SupportForm.prototype.validateEmail = function (email) {
+        var n = /(@.*@)|(\.\.)|(^\.)|(^@)|(@$)|(\.$)|(@\.)/;
+        var s = /^.+\@(\[?)[a-zA-Z0-9\-\.]+\.([a-zA-Z]{2,63}|[0-9]{1,63})(\]?)$/;
+        var k = "1234567890qwertyuiopasdfghjklzxcvbnm+.@-_'QWERTYUIOPASDFGHJKLZXCVBNM";
+        for (var K = 0; K < email.length; K++) {
+            if (k.indexOf(email.charAt(K)) < 0) {
+                return false;
+            }
+        }
+        return !n.test(email) && s.test(email);
+    };
+    SupportForm.prototype.disableForm = function () {
+        $('#email').prop('disabled', true);
+        $('#message-body').prop('disabled', true);
+        $('#choose-files').prop('disabled', true);
+        $('#issues-send-button').hide();
+        $('#issues-sending-button').show();
+    };
+    SupportForm.prototype.enableForm = function (saveContent) {
+        if (saveContent === void 0) { saveContent = false; }
+        $('#email').prop('disabled', false);
+        $('#message-body').prop('disabled', false);
+        var panel = $('#files-panel');
+        panel.hasClass('panel-danger') && panel.removeClass('panel-danger').addClass('panel-info');
+        $('#choose-files').prop('disabled', false);
+        if (!saveContent) {
+            $('#issue-files').val('');
+            $('#files-list-group').empty();
+            this.updateFilesCount(0);
+        }
+        var sendButton = $('#issues-send-button');
+        sendButton.prop("disabled", false);
+        sendButton.show();
+        $('#issues-sending-button').hide();
+    };
+    SupportForm.prototype.printErrorMessage = function (jqXHR, exception) {
+        var msg = '';
+        if (jqXHR.status === 0) {
+            msg = 'Not connect. Verify Network.';
+        }
+        else if (jqXHR.status == 404) {
+            msg = 'Requested page not found. [404]';
+        }
+        else if (jqXHR.status == 500) {
+            msg = 'Internal Server Error [500].';
+        }
+        else if (exception === 'parsererror') {
+            msg = 'Requested JSON parse failed.';
+        }
+        else if (exception === 'timeout') {
+            msg = 'Time out error.';
+        }
+        else if (exception === 'abort') {
+            msg = 'Ajax request aborted.';
+        }
+        else {
+            msg = 'Uncaught Error.\n' + jqXHR.responseText;
+        }
+        trace('[SupportForm.printErrorMessage]', msg);
+    };
+    return SupportForm;
+}());

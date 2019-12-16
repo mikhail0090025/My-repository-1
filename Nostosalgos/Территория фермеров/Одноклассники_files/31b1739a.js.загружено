@@ -1,0 +1,1 @@
+define([],function(){var a={};var b={REACTION_COMPONENTS:"widgets",ICON_REACTIONS:"icons"};return{collections:b,add:function(f,d,c){var e=a[f]||{};var g=e[d]||[];if(g.indexOf(c)===-1){g.push(c);e[d]=g;a[f]=e;}},remove:function(g,e,c){if(!a[g]){return;}var f=a[g];if(!f[e]){return;}var h=f[e];var d=h.indexOf(c);if(d!==-1){h.splice(d,1);}},get:function(c){return a[c];}};});

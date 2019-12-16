@@ -1,0 +1,39 @@
+//**************** OD ********************
+
+function GameConfig(cfg_params) {
+    CommonConfig.call(this, cfg_params);
+}
+
+GameConfig.prototype = Object.create(CommonConfig.prototype);
+GameConfig.prototype.constructor = GameConfig;
+
+GameConfig.prototype.get_user_id = function(){
+    return this.params['logged_user_id'];
+};
+
+GameConfig.prototype.inviter_id = function(){
+    return this.params['refplace'] == 'friend_invitation' ? this.params['refferer'] : null;
+};
+
+GameConfig.prototype.extra_params = function(){
+    return this.params['custom_args'] ? convert_url_vars_to_object(decodeURIComponent(this.params['custom_args'])) : {};
+};
+
+GameConfig.prototype.adv_id = function (){
+    var adv_id = this.extra_params()['adv_id'];
+    return this.params['refplace'] == 'app_notification' ? 'notification' : adv_id;
+};
+
+GameConfig.prototype.unique_post_tag = function(){
+    return this.extra_params()['unique_post_tag'];
+};
+
+CommonConfig.prototype.platform_tag = function(){
+    return 'ok';
+};
+
+
+//CommonConfig.prototype.check_first_install = function(){ //comment for use common model
+//    this.first_install = params['first_start'] == '1';
+//    this.process_statistic();
+//};

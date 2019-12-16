@@ -1,0 +1,55 @@
+* { font-family: Arial, Helvetica, sans-serif }
+img { border: none }
+
+div.buttons *{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+div#purchase_history { display:none }
+div#purchase_history * { }
+
+div.history_header { text-align: center; font-size: 19px; line-height: 29px; height: 29px; color: #ffffff; background: url('../images/history_bg.gif') repeat-x;}
+div.history_content { font-size: 14px; font-weight: bold; display: block; width: 700px; max-height: 400px; overflow: auto; }
+
+td.left_border {border-left: none}
+td.right_border {border-right: none}
+
+table.p_history td { padding: 4px 19px 4px 19px; color: #393937 }
+table.p_history td { line-height: 22px}
+
+table.p_history td table * {padding: 0; line-height: normal;}
+
+#history_loader {width: 700px; height: 200px; text-align: center;}
+#history_loader img {margin: 75px 0 0 0}
+#history_loader a {text-decoration: none; color: #888888;}
+
+#tinybox {position:absolute; display:none; padding: 5px; background:#fff url(../images/preload.gif) no-repeat 50% 50%; z-index:2000}
+#tinymask {position:absolute; display:none; top:0; left:0; height:100%; width:100%; background:#000; z-index:1500}
+#tinycontent {background:#fff}
+
+div.buttons {background: url('../images/greenlinem.png') repeat-x; background-position: left bottom; width: 760px; height: 42px; font-family: 'Myriad Pro', Arial, Helvetica, sans-serif; font-size: 13px;}
+div.buttons a{text-decoration: none; color: #fff;}
+div.buttons a.play{text-align:center; line-height:33px; background: url('../images/greenbtn.png?v=2') no-repeat; width: 69px; height: 33px; float: left; color: #fff; padding: 0px 0 0 0px; margin: 6px 1px 0 0px;}
+div.buttons a.envelope{background: url('../images/envelope.png') no-repeat; width: 41px; height: 26px; float: right; color: #fff; padding: 5px 0 0 0px; margin: 5px 0 0 0px;}
+
+div.green_line {background: url('../images/greenlinem.png') repeat-x; background-position: left bottom; width: 100%;}
+div.gray_line {background: url('../images/linem.png') repeat-x; width: 100%; padding: 5px 0 0 0;}
+
+div.buttons div.button{float: left; margin: 7px 0 0 0px;}
+div.buttons div.button a{padding: 5px 0 0 0 !important; float: left; color: #232321;}
+div.buttons div.button div.lp{background: url('../images/btnl.png?v=2') no-repeat; width: 6px; height: 31px; float: left;}
+div.buttons div.button div.middle{background: url('../images/btnm.png?v=2') repeat-x; height: 31px; float: left; width: auto;}
+div.buttons div.button div.rp{background: url('../images/btnr.png?v=2') no-repeat; width: 7px; height: 31px; float: left;}
+
+div.buttons div.button:hover a{color: #fff;}
+div.buttons div.button:hover div.lp{background: url('../images/gbtnl.png?v=2') no-repeat; width: 6px; height: 31px; float: left;}
+div.buttons div.button:hover div.middle{background: url('../images/gbtnm.png?v=2') repeat-x; height: 31px; float: left; width: auto;}
+div.buttons div.button:hover div.rp{background: url('../images/gbtnr.png?v=2') no-repeat; width: 7px; height: 31px; float: left;}
+div.buttons div.button a.inactive{color: #888888;}
+div.buttons div.button:hover a.inactive{color: #cccccc;}

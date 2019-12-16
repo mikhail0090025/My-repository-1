@@ -1,0 +1,1 @@
+define(function(){var b={};var a=function a(d){if(typeof b[d]=="function"){b[d]=b[d]();}return b[d];};var c=function c(e,f,d){b[e]=d?f():f;};a.add=c;return a;});

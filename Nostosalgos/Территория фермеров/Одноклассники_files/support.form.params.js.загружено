@@ -1,0 +1,19 @@
+var SupportFormParams = /** @class */ (function () {
+    function SupportFormParams() {
+    }
+    SupportFormParams.mapClientLocaleToHS = function (value) {
+        switch (value) {
+            case "jp":
+                return "ja";
+            case "zhtw":
+                return "zh-hant";
+            default:
+                return value;
+        }
+    };
+    SupportFormParams.allowed_forms_id = ['email', 'message-body'];
+    SupportFormParams.allowed_file_formats = ['image/jpeg', 'image/png', 'image/bmp', 'text/plain'];
+    SupportFormParams.MAX_IMAGE_SIZE = 2097152;
+    SupportFormParams.MAX_FILES_COUNT = 3;
+    return SupportFormParams;
+}());

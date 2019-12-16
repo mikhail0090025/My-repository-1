@@ -1,0 +1,1 @@
+define(function(){var a=setTimeout.bind(window,function(c){var b=c.getAttribute("data-id");if(b){c=document.getElementById(b);}c.focus();var d=c.value&&c.value.length;if(d&&["text","search","url","tel","password"].indexOf(c.type)>=0){c.setSelectionRange(d,d);}},0);return{activate:a};});

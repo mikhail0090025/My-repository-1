@@ -1,0 +1,217 @@
+// global functions: get_parameters_hash, adler32_hash, adler32_hash_uid, swfobject, detect_browser_info, get_u, HttpClient
+
+var CommonConfig = function (cfg_params){
+    this.params = get_parameters_hash();
+    this.servers = cfg_params.servers;
+
+    this.api_key = cfg_params.stat_api_key;
+    this.sid = adler32_hash(new Date().getTime().toString());
+    this.su = ('00000' + (Math.random() * 16777216 << 0).toString(16)).substr(-8);
+    this.user_id = (typeof(this.get_user_id) == 'function') ? this.get_user_id() : user_id;
+    this.stat_user_id = cfg_params.hashed_uid ? adler32_hash_uid(this.user_id) : this.user_id;
+    this.app_start_time = cfg_params.start_time;
+
+    this.first_install = false;
+
+    this.cookie_param_name = "nochck" + this.user_id;
+    this.stat_sent = false;
+
+    try {
+        var fp_version = swfobject.getFlashPlayerVersion();
+        this.str_fp_version = fp_version ? fp_version.major + "." + fp_version.minor + "." + fp_version.release : 'unknown';
+        this.fp_version = fp_version.major;
+    }
+    catch(e){
+        if (typeof(this.log) == 'function') this.log("error check fp_version");
+        this.str_fp_version = 'error';
+        this.fp_version = 11;
+    }
+
+    try {
+        var browser_version = detect_browser_info(navigator.userAgent);
+        this.str_browser_version = browser_version ? (browser_version.name + "-" + browser_version.version) : 'unknown';
+    }
+    catch(e){
+        if (typeof(this.log) == 'function') this.log("error check browser");
+        this.str_browser_version = 'error';
+    }
+};
+
+CommonConfig.prototype.before_start = function(start_game_func){
+    this.start_game_func = start_game_func;
+    this.check_first_install();
+};
+
+CommonConfig.prototype.check_first_install = function(){
+    if (!this.need_check()){//у юзера уже был "не первый" заход в игру
+        this.log("has in cookie");
+        this.process_statistic();
+        return;
+    }
+
+    var index = parseInt(Math.random() * this.servers.length);
+    var count_iterations = 0;
+    var _cfg = this;
+
+    var check_func = function() {
+        //_cfg.log("check_func");
+
+        new HttpClient().get("//" + _cfg.servers[index] + "/user_exists?user_id=" + _cfg.user_id + "&text_response=1",
+            function (response) {
+                _cfg.evt("user_exist_complete", _cfg.time_diff(), "appstart");
+                _cfg.first_install = response == "0";
+                if (!_cfg.first_install){
+                    _cfg.set_no_check();
+                }
+                _cfg.process_statistic();
+            },
+            function (error) {
+                //_cfg.log('check_error', error);
+                index = (index + 1) % _cfg.servers.length;
+                count_iterations += 1;
+                if (count_iterations < _cfg.servers.length)
+                    check_func();
+                else
+                    _cfg.process_statistic();
+            });
+    };
+    this.evt("user_exist_request", this.time_diff(), "appstart");
+    check_func();
+};
+
+CommonConfig.prototype.process_statistic = function(){
+    if (this.first_install) {
+        try {
+            this.apa();
+            this.evt(this.str_fp_version, 1, "appstart", "versions", this.str_browser_version);
+        }
+        catch(e){
+            this.log("err_apa===", e.name, e.message);
+            this.evt("apa_error", 1, "iframe_err", e.name, e.message);
+        }
+    }
+
+    try {
+        var adv_id = this.adv_id();
+        this.log("adv_id=", adv_id);
+        if (adv_id) {
+            var adv_id_for_stat = "st1=" + encodeURIComponent(adv_id);
+            if (adv_id.search("ad_") >= 0 && adv_id.search("kad_") >= 0) {
+                var _temp = adv_id.split("kad_")[1].split("_");
+                var st1 = encodeURIComponent(_temp[0]);
+                var st2 = encodeURIComponent(_temp[1]);
+                var st3 = encodeURIComponent(_temp[2]);
+                if (st3 == "nogroup") st3 += "_" + encodeURIComponent(_temp[3]);
+                adv_id_for_stat = "st1=" + st1 + "&st2=" + st2 + "&st3=" + st3;
+            }
+            this.log("ucc=", adv_id_for_stat, !this.first_install);
+            this.ucc(adv_id_for_stat, !this.first_install);
+        }
+    }
+    catch(e){
+        this.log("err_ucc===", e.name, e.message);
+        this.evt("ucc_error", 1, "iframe_err", e.name, e.message);
+    }
+
+    this.start_game();
+};
+
+CommonConfig.prototype.start_game = function(){
+    this.evt("iframe", this.time_diff(), "appstart", this.first_install ? "first" : "returning");
+
+    if (this.start_game_func)
+        this.start_game_func.call();
+
+    this.start_game_func = null;
+};
+
+CommonConfig.prototype.log = function (){
+    if (console) console.log.apply(console, arguments);
+};
+
+CommonConfig.prototype.get_user_id = function(){
+    throw 'must be overriden!';
+};
+
+CommonConfig.prototype.inviter_id = function(){
+    throw 'must be overriden!';
+};
+
+CommonConfig.prototype.extra_params = function(){
+    throw 'must be overriden!';
+};
+
+CommonConfig.prototype.unique_post_tag = function(){
+    throw 'must be overriden!';
+};
+
+CommonConfig.prototype.platform_tag = function(){
+    throw 'must be overriden!';
+};
+
+CommonConfig.prototype.adv_id = function(){
+    return null;
+};
+
+CommonConfig.prototype.send = function(action, params) {
+    this.log("send(", this.api_key, ")===>", action, params);
+    if (!this.api_key) return;
+    try {
+        new HttpClient().get("//collector.stats.socialquantum.ru/" + this.api_key + "/" + action + "/?" + params + '&direct=true');
+    }
+    catch (e) {
+        if (console) this.log("err_send===", e.name, e.message);
+        document.createElement('img').setAttribute("src", "//collector.stats.socialquantum.ru/" + this.api_key + "/" + action + "/?" + params + '&direct=true');
+    }
+};
+
+CommonConfig.prototype.ucc = function (adv_id, instaled) {
+    this.stat_sent = true;
+    this.send("ucc", adv_id + "&tu=ad&i=" + (instaled ? "1" : "0") + "&su=" + this.su + "&s=" + this.stat_user_id + "&sid=" + this.sid);
+};
+
+CommonConfig.prototype.apa = function () {
+    var inviter_id = this.inviter_id();
+    if (inviter_id && inviter_id == this.user_id) inviter_id = null;
+
+    var unique_tag = this.unique_post_tag();
+
+    var u = null;
+    if (unique_tag != null && unique_tag != "0" && unique_tag != "") {
+        u = get_u(unique_tag);
+    }
+    else if (inviter_id != null && inviter_id != "0" && inviter_id != "") {
+        u = get_u(inviter_id);
+    }
+    this.stat_sent = true;
+    this.send("apa", "su=" + this.su + "&s=" + this.stat_user_id + "&sid=" + this.sid + ((u != null && u != "0" && u != "") ? ("&u=" + u) : ""));
+};
+
+CommonConfig.prototype.evt = function(event_name, value, st1, st2, st3, data) {
+    var params = "s=" + this.stat_user_id;
+    params += "&n=" + event_name;
+    params += "&v=" + value;
+    params += "&l=" + 0;
+    if (st1) params += "&st1=" + st1;
+    if (st2) params += "&st2=" + st2;
+    if (st3) params += "&st3=" + st3;
+    if (data) params += "&data=" + encodeURIComponent(data);
+    params += "&sid=" + this.sid;
+    this.send("evt", params);
+};
+
+CommonConfig.prototype.time_diff = function(){
+    return new Date().getTime() - this.app_start_time;
+};
+
+CommonConfig.prototype.need_check = function(){
+    return document.cookie.indexOf(this.cookie_param_name) == -1
+};
+
+CommonConfig.prototype.set_no_check = function(){
+    var date = new Date();
+    date.setYear(date.getFullYear() + 10);
+    document.cookie = this.cookie_param_name + "=1; path=/; expires=" + date.toUTCString();
+};
+
+
