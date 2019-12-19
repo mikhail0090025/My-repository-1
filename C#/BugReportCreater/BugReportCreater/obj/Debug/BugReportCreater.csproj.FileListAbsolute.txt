@@ -1,0 +1,8 @@
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\bin\Debug\BugReportCreater.exe.config
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\bin\Debug\BugReportCreater.exe
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\bin\Debug\BugReportCreater.pdb
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\obj\Debug\BugReportCreater.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\obj\Debug\BugReportCreater.MainForm.resources
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\obj\Debug\BugReportCreater.csproj.GenerateResource.Cache
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\obj\Debug\BugReportCreater.exe
+C:\Users\User\Documents\SharpDevelop Projects\BugReportCreater\BugReportCreater\obj\Debug\BugReportCreater.pdb

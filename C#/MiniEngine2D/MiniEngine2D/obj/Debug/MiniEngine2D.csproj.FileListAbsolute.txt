@@ -1,0 +1,8 @@
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\bin\Debug\MiniEngine2D.exe.config
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\bin\Debug\MiniEngine2D.exe
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\bin\Debug\MiniEngine2D.pdb
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\obj\Debug\MiniEngine2D.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\obj\Debug\MiniEngine2D.MainForm.resources
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\obj\Debug\MiniEngine2D.csproj.GenerateResource.Cache
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\obj\Debug\MiniEngine2D.exe
+C:\Users\User\Documents\SharpDevelop Projects\MiniEngine2D\MiniEngine2D\obj\Debug\MiniEngine2D.pdb
