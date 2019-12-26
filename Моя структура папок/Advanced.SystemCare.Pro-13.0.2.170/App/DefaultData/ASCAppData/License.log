@@ -1,0 +1,430 @@
+2019-02-24 17:42:59 042 ASCTray.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASCTray.exe
+2019-02-24 17:42:59 042 ASCTray.exe Restore license failed with :2
+2019-02-24 17:42:59 042 ASCTray.exe Restore licenseExt failed with :2
+2019-02-24 17:42:59 042 ASCTray.exe Restore license failed with :2
+2019-02-24 17:42:59 042 ASCTray.exe Restore licenseExt failed with :2
+2019-02-24 17:42:59 042 ASCTray.exe LC RS
+2019-02-24 17:42:59 042 ASCTray.exe SET Reg Sta
+2019-02-24 17:42:59 042 ASCTray.exe SET RegFlagDef :0
+2019-02-24 17:42:59 042 ASCTray.exe SET RegFlag Fal:1
+2019-02-24 17:42:59 042 ASCTray.exe SET Reg Fin
+2019-02-24 17:42:59 073 ASCTray.exe LC SUC
+2019-02-24 17:42:59 073 ASCTray.exe GS:-1
+2019-02-24 17:43:00 025 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:00 025 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 025 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 025 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 025 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 025 Register.exe LC RS
+2019-02-24 17:43:00 025 Register.exe LC SUC
+2019-02-24 17:43:00 087 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:00 087 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 087 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 087 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 087 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 087 Register.exe LC RS
+2019-02-24 17:43:00 087 Register.exe LC SUC
+2019-02-24 17:43:00 477 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:43:00 477 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 477 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 477 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 477 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 477 AutoUpdate.exe LC RS
+2019-02-24 17:43:00 477 AutoUpdate.exe LC SUC
+2019-02-24 17:43:00 743 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:43:00 743 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 743 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 743 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 743 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 743 AutoUpdate.exe LC RS
+2019-02-24 17:43:00 743 AutoUpdate.exe LC SUC
+2019-02-24 17:43:00 789 AutoUpdate.exe IsNeedCKOL
+2019-02-24 17:43:00 789 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:43:00 789 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 789 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 789 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 789 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 789 AutoUpdate.exe LC RS
+2019-02-24 17:43:00 789 AutoUpdate.exe LC SUC
+2019-02-24 17:43:00 789 AutoUpdate.exe IsNeedCKOL:not have
+2019-02-24 17:43:00 789 AutoUpdate.exe IsNeedCKOL Fin
+2019-02-24 17:43:00 805 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:43:00 805 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 805 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 805 AutoUpdate.exe Restore license failed with :2
+2019-02-24 17:43:00 805 AutoUpdate.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 805 AutoUpdate.exe LC RS
+2019-02-24 17:43:00 805 AutoUpdate.exe LC SUC
+2019-02-24 17:43:00 852 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:00 852 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 852 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 852 Register.exe Restore license failed with :2
+2019-02-24 17:43:00 867 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:00 867 Register.exe LC RS
+2019-02-24 17:43:00 867 Register.exe LC SUC
+2019-02-24 17:43:13 862 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:13 862 Register.exe Restore license failed with :2
+2019-02-24 17:43:13 862 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:13 862 Register.exe Restore license failed with :2
+2019-02-24 17:43:13 862 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:13 862 Register.exe LC RS
+2019-02-24 17:43:13 862 Register.exe LC SUC
+2019-02-24 17:43:13 893 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:13 909 Register.exe Restore license failed with :2
+2019-02-24 17:43:13 909 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:13 909 Register.exe Restore license failed with :2
+2019-02-24 17:43:13 909 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:13 909 Register.exe LC RS
+2019-02-24 17:43:13 909 Register.exe LC SUC
+2019-02-24 17:43:18 308 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:18 308 Register.exe Restore license failed with :2
+2019-02-24 17:43:18 308 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:18 308 Register.exe Restore license failed with :2
+2019-02-24 17:43:18 308 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:18 308 Register.exe LC RS
+2019-02-24 17:43:18 308 Register.exe LC SUC
+2019-02-24 17:43:19 400 Register.exe SetTaskInfo Start
+2019-02-24 17:43:19 400 Register.exe SetTaskInfo Init
+2019-02-24 17:43:19 400 Register.exe SetTaskInfo LC
+2019-02-24 17:43:19 400 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:19 400 Register.exe Restore license failed with :2
+2019-02-24 17:43:19 416 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:19 416 Register.exe Restore license failed with :2
+2019-02-24 17:43:19 416 Register.exe Restore licenseExt failed with :2
+2019-02-24 17:43:19 416 Register.exe LC RS
+2019-02-24 17:43:19 416 Register.exe LC SUC
+2019-02-24 17:43:19 416 Register.exe SetTaskInfo Count CurD
+2019-02-24 17:43:19 416 Register.exe SetTaskInfo Count ExpD
+2019-02-24 17:43:19 416 Register.exe SetTaskInfo DB
+2019-02-24 17:43:19 416 Register.exe SetTaskInfo ExpDateStr
+2019-02-24 17:43:19 416 Register.exe SetTaskInfo ExpDateStr end
+2019-02-24 17:43:19 416 Register.exe FreeOffer ST Pro
+2019-02-24 17:43:19 416 Register.exe UpdateLicenseInfo:IsSetInfo=True
+2019-02-24 17:43:19 416 Register.exe UL FN F
+2019-02-24 17:43:19 416 Register.exe CreateLicenseInfo:IsSetInfo=True
+2019-02-24 17:43:19 416 Register.exe CL :C:\Program Files\Common Files\IObit\Advanced SystemCare\License.dat
+2019-02-24 17:43:19 431 Register.exe CL:C:\Program Files\Common Files\IObit\Advanced SystemCare\License.dat
+2019-02-24 17:43:19 431 Register.exe CL EXT :C:\Program Files\Common Files\IObit\Advanced SystemCare\Ext.dat
+2019-02-24 17:43:19 431 Register.exe CL Ext Exp:353
+2019-02-24 17:43:19 431 Register.exe CL Ext:C:\Program Files\Common Files\IObit\Advanced SystemCare\Ext.dat
+2019-02-24 17:43:19 431 Register.exe SET Reg Sta
+2019-02-24 17:43:19 431 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:19 431 Register.exe LAT EXP:353
+2019-02-24 17:43:19 431 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:19 431 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:19 431 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:19 431 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:19 431 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:19 431 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:19 431 Register.exe GET C S
+2019-02-24 17:43:19 431 Register.exe LC SUC
+2019-02-24 17:43:19 431 Register.exe SET RegFlag :2
+2019-02-24 17:43:19 431 Register.exe SET RegFlag Fal:3
+2019-02-24 17:43:19 447 Register.exe SET Reg Fin
+2019-02-24 17:43:19 447 Register.exe Backup license succeed
+2019-02-24 17:43:19 447 Register.exe Backup licenseExt succeed
+2019-02-24 17:43:19 447 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:19 447 Register.exe LAT EXP:353
+2019-02-24 17:43:19 447 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:19 447 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:19 447 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:19 447 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:19 447 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:19 447 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:19 447 Register.exe GET C S
+2019-02-24 17:43:19 447 Register.exe LC SUC
+2019-02-24 17:43:21 054 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:21 069 Register.exe LAT EXP:353
+2019-02-24 17:43:21 069 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 069 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 069 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 069 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 069 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 069 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 069 Register.exe GET C S
+2019-02-24 17:43:21 069 Register.exe LC SUC
+2019-02-24 17:43:21 069 Register.exe GS:353
+2019-02-24 17:43:21 147 ASCTray.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASCTray.exe
+2019-02-24 17:43:21 147 ASCTray.exe LAT EXP:353
+2019-02-24 17:43:21 147 ASCTray.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 147 ASCTray.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 147 ASCTray.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 147 ASCTray.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 147 ASCTray.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 147 ASCTray.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 147 ASCTray.exe GET C S
+2019-02-24 17:43:21 147 ASCTray.exe LC SUC
+2019-02-24 17:43:21 147 ASCTray.exe GS:353
+2019-02-24 17:43:21 319 QuickSettings.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\QuickSettings.exe
+2019-02-24 17:43:21 319 QuickSettings.exe LAT EXP:353
+2019-02-24 17:43:21 319 QuickSettings.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 319 QuickSettings.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 319 QuickSettings.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 319 QuickSettings.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 319 QuickSettings.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 319 QuickSettings.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 319 QuickSettings.exe GET C S
+2019-02-24 17:43:21 319 QuickSettings.exe LC SUC
+2019-02-24 17:43:21 319 QuickSettings.exe GS:353
+2019-02-24 17:43:21 335 QuickSettings.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\QuickSettings.exe
+2019-02-24 17:43:21 335 QuickSettings.exe LAT EXP:353
+2019-02-24 17:43:21 335 QuickSettings.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 335 QuickSettings.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 335 QuickSettings.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 335 QuickSettings.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 335 QuickSettings.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 335 QuickSettings.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 335 QuickSettings.exe GET C S
+2019-02-24 17:43:21 335 QuickSettings.exe LC SUC
+2019-02-24 17:43:21 335 QuickSettings.exe GS:353
+2019-02-24 17:43:21 366 QuickSettings.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\QuickSettings.exe
+2019-02-24 17:43:21 366 QuickSettings.exe LAT EXP:353
+2019-02-24 17:43:21 366 QuickSettings.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 366 QuickSettings.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 366 QuickSettings.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 366 QuickSettings.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 366 QuickSettings.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 366 QuickSettings.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 366 QuickSettings.exe GET C S
+2019-02-24 17:43:21 366 QuickSettings.exe LC SUC
+2019-02-24 17:43:21 366 QuickSettings.exe GS:353
+2019-02-24 17:43:21 366 QuickSettings.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\QuickSettings.exe
+2019-02-24 17:43:21 381 QuickSettings.exe LAT EXP:353
+2019-02-24 17:43:21 381 QuickSettings.exe LAT EXD:2020-02-12
+2019-02-24 17:43:21 381 QuickSettings.exe LAT FST:2019-02-24
+2019-02-24 17:43:21 381 QuickSettings.exe LAT LST:2019-02-24
+2019-02-24 17:43:21 381 QuickSettings.exe Ext LST:2019-02-24
+2019-02-24 17:43:21 381 QuickSettings.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:21 381 QuickSettings.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:21 381 QuickSettings.exe GET C S
+2019-02-24 17:43:21 381 QuickSettings.exe LC SUC
+2019-02-24 17:43:21 381 QuickSettings.exe GS:353
+2019-02-24 17:43:26 077 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:26 077 Register.exe LAT EXP:353
+2019-02-24 17:43:26 077 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:26 077 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:26 077 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:26 077 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:26 077 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:26 077 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:26 077 Register.exe GET C S
+2019-02-24 17:43:26 077 Register.exe LC SUC
+2019-02-24 17:43:26 077 Register.exe GCT D: True
+2019-02-24 17:43:26 077 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:26 093 Register.exe LAT EXP:353
+2019-02-24 17:43:26 093 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:26 093 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:26 093 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:26 093 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:26 093 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:26 093 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:26 093 Register.exe GET C S
+2019-02-24 17:43:26 093 Register.exe LC SUC
+2019-02-24 17:43:26 451 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:26 451 Register.exe LAT EXP:353
+2019-02-24 17:43:26 451 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:26 451 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:26 451 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:26 451 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:26 451 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:26 451 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:26 451 Register.exe GET C S
+2019-02-24 17:43:26 451 Register.exe LC SUC
+2019-02-24 17:43:26 451 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:26 451 Register.exe LAT EXP:353
+2019-02-24 17:43:26 451 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:26 451 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:26 451 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:26 451 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:26 467 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:26 467 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:26 467 Register.exe GET C S
+2019-02-24 17:43:26 467 Register.exe LC SUC
+2019-02-24 17:43:26 467 Register.exe GCT D: True
+2019-02-24 17:43:26 467 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:43:26 467 Register.exe LAT EXP:353
+2019-02-24 17:43:26 467 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:43:26 467 Register.exe LAT FST:2019-02-24
+2019-02-24 17:43:26 467 Register.exe LAT LST:2019-02-24
+2019-02-24 17:43:26 467 Register.exe Ext LST:2019-02-24
+2019-02-24 17:43:26 467 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:43:26 467 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:43:26 467 Register.exe GET C S
+2019-02-24 17:43:26 467 Register.exe LC SUC
+2019-02-24 17:46:15 987 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:46:15 987 Register.exe LAT EXP:353
+2019-02-24 17:46:15 987 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:46:15 987 Register.exe LAT FST:2019-02-24
+2019-02-24 17:46:15 987 Register.exe LAT LST:2019-02-24
+2019-02-24 17:46:15 987 Register.exe Ext LST:2019-02-24
+2019-02-24 17:46:15 987 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:46:15 987 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:46:15 987 Register.exe GET C S
+2019-02-24 17:46:15 987 Register.exe LC SUC
+2019-02-24 17:46:15 987 Register.exe GCT D: True
+2019-02-24 17:46:16 003 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:46:16 003 Register.exe LAT EXP:353
+2019-02-24 17:46:16 003 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:46:16 003 Register.exe LAT FST:2019-02-24
+2019-02-24 17:46:16 003 Register.exe LAT LST:2019-02-24
+2019-02-24 17:46:16 003 Register.exe Ext LST:2019-02-24
+2019-02-24 17:46:16 003 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:46:16 003 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:46:16 003 Register.exe GET C S
+2019-02-24 17:46:16 003 Register.exe LC SUC
+2019-02-24 17:46:16 346 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:46:16 346 Register.exe LAT EXP:353
+2019-02-24 17:46:16 346 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:46:16 346 Register.exe LAT FST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe LAT LST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe Ext LST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:46:16 346 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:46:16 346 Register.exe GET C S
+2019-02-24 17:46:16 346 Register.exe LC SUC
+2019-02-24 17:46:16 346 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:46:16 346 Register.exe LAT EXP:353
+2019-02-24 17:46:16 346 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:46:16 346 Register.exe LAT FST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe LAT LST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe Ext LST:2019-02-24
+2019-02-24 17:46:16 346 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:46:16 346 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:46:16 346 Register.exe GET C S
+2019-02-24 17:46:16 346 Register.exe LC SUC
+2019-02-24 17:46:16 361 Register.exe GCT D: True
+2019-02-24 17:46:16 361 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:46:16 361 Register.exe LAT EXP:353
+2019-02-24 17:46:16 361 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:46:16 361 Register.exe LAT FST:2019-02-24
+2019-02-24 17:46:16 361 Register.exe LAT LST:2019-02-24
+2019-02-24 17:46:16 361 Register.exe Ext LST:2019-02-24
+2019-02-24 17:46:16 361 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:46:16 361 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:46:16 361 Register.exe GET C S
+2019-02-24 17:46:16 361 Register.exe LC SUC
+2019-02-24 17:48:19 161 ASC.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASC.exe
+2019-02-24 17:48:19 161 ASC.exe LAT EXP:353
+2019-02-24 17:48:19 166 ASC.exe LAT EXD:2020-02-12
+2019-02-24 17:48:19 166 ASC.exe LAT FST:2019-02-24
+2019-02-24 17:48:19 166 ASC.exe LAT LST:2019-02-24
+2019-02-24 17:48:19 166 ASC.exe Ext LST:2019-02-24
+2019-02-24 17:48:19 166 ASC.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:19 166 ASC.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:19 166 ASC.exe GET C S
+2019-02-24 17:48:19 166 ASC.exe LC SUC
+2019-02-24 17:48:19 166 ASC.exe GTE Task Res: 2
+2019-02-24 17:48:19 166 ASC.exe GCT TD: True
+2019-02-24 17:48:19 963 ASCTray.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASCTray.exe
+2019-02-24 17:48:19 963 ASCTray.exe LAT EXP:353
+2019-02-24 17:48:19 963 ASCTray.exe LAT EXD:2020-02-12
+2019-02-24 17:48:19 963 ASCTray.exe LAT FST:2019-02-24
+2019-02-24 17:48:19 963 ASCTray.exe LAT LST:2019-02-24
+2019-02-24 17:48:19 963 ASCTray.exe Ext LST:2019-02-24
+2019-02-24 17:48:19 963 ASCTray.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:19 963 ASCTray.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:19 963 ASCTray.exe GET C S
+2019-02-24 17:48:19 963 ASCTray.exe LC SUC
+2019-02-24 17:48:19 963 ASCTray.exe GS:353
+2019-02-24 17:48:20 353 ASC.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASC.exe
+2019-02-24 17:48:20 353 ASC.exe LAT EXP:353
+2019-02-24 17:48:20 353 ASC.exe LAT EXD:2020-02-12
+2019-02-24 17:48:20 353 ASC.exe LAT FST:2019-02-24
+2019-02-24 17:48:20 353 ASC.exe LAT LST:2019-02-24
+2019-02-24 17:48:20 353 ASC.exe Ext LST:2019-02-24
+2019-02-24 17:48:20 353 ASC.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:20 368 ASC.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:20 368 ASC.exe GET C S
+2019-02-24 17:48:20 368 ASC.exe LC SUC
+2019-02-24 17:48:20 368 ASC.exe GT TTA:0
+2019-02-24 17:48:20 368 ASC.exe GT TTB:353
+2019-02-24 17:48:20 368 ASC.exe GT TTC: F
+2019-02-24 17:48:20 368 ASC.exe GT TT C2:0
+2019-02-24 17:48:21 086 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:48:21 086 AutoUpdate.exe LAT EXP:353
+2019-02-24 17:48:21 086 AutoUpdate.exe LAT EXD:2020-02-12
+2019-02-24 17:48:21 086 AutoUpdate.exe LAT FST:2019-02-24
+2019-02-24 17:48:21 086 AutoUpdate.exe LAT LST:2019-02-24
+2019-02-24 17:48:21 086 AutoUpdate.exe Ext LST:2019-02-24
+2019-02-24 17:48:21 086 AutoUpdate.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:21 086 AutoUpdate.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:21 086 AutoUpdate.exe GET C S
+2019-02-24 17:48:21 086 AutoUpdate.exe LC SUC
+2019-02-24 17:48:21 289 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:48:21 289 AutoUpdate.exe LAT EXP:353
+2019-02-24 17:48:21 289 AutoUpdate.exe LAT EXD:2020-02-12
+2019-02-24 17:48:21 289 AutoUpdate.exe LAT FST:2019-02-24
+2019-02-24 17:48:21 289 AutoUpdate.exe LAT LST:2019-02-24
+2019-02-24 17:48:21 289 AutoUpdate.exe Ext LST:2019-02-24
+2019-02-24 17:48:21 289 AutoUpdate.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:21 289 AutoUpdate.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:21 289 AutoUpdate.exe GET C S
+2019-02-24 17:48:21 289 AutoUpdate.exe LC SUC
+2019-02-24 17:48:21 320 AutoUpdate.exe IsNeedCKOL
+2019-02-24 17:48:21 320 AutoUpdate.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\AutoUpdate.exe
+2019-02-24 17:48:21 320 AutoUpdate.exe LAT EXP:353
+2019-02-24 17:48:21 320 AutoUpdate.exe LAT EXD:2020-02-12
+2019-02-24 17:48:21 320 AutoUpdate.exe LAT FST:2019-02-24
+2019-02-24 17:48:21 320 AutoUpdate.exe LAT LST:2019-02-24
+2019-02-24 17:48:21 320 AutoUpdate.exe Ext LST:2019-02-24
+2019-02-24 17:48:21 335 AutoUpdate.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:21 335 AutoUpdate.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:21 335 AutoUpdate.exe GET C S
+2019-02-24 17:48:21 335 AutoUpdate.exe LC SUC
+2019-02-24 17:48:21 335 AutoUpdate.exe IsNeedCKOL:SerNeed
+2019-02-24 17:48:21 335 AutoUpdate.exe IsNeedCKOL:2019-02-24
+2019-02-24 17:48:21 335 AutoUpdate.exe IsNeedCKOL:0
+2019-02-24 17:48:21 335 AutoUpdate.exe IsNeedCKOL: st0
+2019-02-24 17:48:21 335 AutoUpdate.exe IsNeedCKOL Fin
+2019-02-24 17:48:31 772 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:48:31 788 Register.exe LAT EXP:353
+2019-02-24 17:48:31 788 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:48:31 788 Register.exe LAT FST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe LAT LST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe Ext LST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:31 788 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:31 788 Register.exe GET C S
+2019-02-24 17:48:31 788 Register.exe LC SUC
+2019-02-24 17:48:31 788 Register.exe GCT D: True
+2019-02-24 17:48:31 788 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:48:31 788 Register.exe LAT EXP:353
+2019-02-24 17:48:31 788 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:48:31 788 Register.exe LAT FST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe LAT LST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe Ext LST:2019-02-24
+2019-02-24 17:48:31 788 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:31 788 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:31 788 Register.exe GET C S
+2019-02-24 17:48:31 788 Register.exe LC SUC
+2019-02-24 17:48:32 146 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:48:32 146 Register.exe LAT EXP:353
+2019-02-24 17:48:32 146 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:48:32 146 Register.exe LAT FST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe LAT LST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe Ext LST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:32 146 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:32 146 Register.exe GET C S
+2019-02-24 17:48:32 146 Register.exe LC SUC
+2019-02-24 17:48:32 146 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:48:32 146 Register.exe LAT EXP:353
+2019-02-24 17:48:32 146 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:48:32 146 Register.exe LAT FST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe LAT LST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe Ext LST:2019-02-24
+2019-02-24 17:48:32 146 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:32 146 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:32 146 Register.exe GET C S
+2019-02-24 17:48:32 146 Register.exe LC SUC
+2019-02-24 17:48:32 146 Register.exe GCT D: True
+2019-02-24 17:48:32 162 Register.exe UserName=Foxx,Path=C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\Register.exe
+2019-02-24 17:48:32 162 Register.exe LAT EXP:353
+2019-02-24 17:48:32 162 Register.exe LAT EXD:2020-02-12
+2019-02-24 17:48:32 162 Register.exe LAT FST:2019-02-24
+2019-02-24 17:48:32 162 Register.exe LAT LST:2019-02-24
+2019-02-24 17:48:32 162 Register.exe Ext LST:2019-02-24
+2019-02-24 17:48:32 162 Register.exe GET LT :s_Time_Last=2019-02-24 s_LLastTemp=43520
+2019-02-24 17:48:32 162 Register.exe GET ET :s_Time_Last=2019-02-24 s_ELastTemp=43520
+2019-02-24 17:48:32 162 Register.exe GET C S
+2019-02-24 17:48:32 162 Register.exe LC SUC

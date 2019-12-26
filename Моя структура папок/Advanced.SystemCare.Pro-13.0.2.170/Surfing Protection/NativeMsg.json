@@ -1,0 +1,7 @@
+﻿{
+   "name": "com.ascplugin.protect",
+   "description": "Protect your computer away from malicious website attack.",
+   "path": "SPNativeMessage.exe",
+   "type": "stdio",
+   "allowed_origins": [ "chrome-extension://bbmegnmpleoagolcnjnejdacakedpcgd/" ]
+}

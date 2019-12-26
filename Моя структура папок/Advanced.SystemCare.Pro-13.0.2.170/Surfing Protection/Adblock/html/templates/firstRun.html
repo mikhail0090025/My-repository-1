@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<!--
+  - This file is part of Adblock Plus <https://adblockplus.org/>,
+  - Copyright (C) 2006-2015 Eyeo GmbH
+  -
+  - Adblock Plus is free software: you can redistribute it and/or modify
+  - it under the terms of the GNU General Public License version 3 as
+  - published by the Free Software Foundation.
+  -
+  - Adblock Plus is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  - GNU General Public License for more details.
+  -
+  - You should have received a copy of the GNU General Public License
+  - along with Adblock Plus.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="../static/js/ieEventListenerPolyfill.js"></script>
+  <script src="../static/js/ieFirstRun.js"></script>
+  <script src="../static/js/firstRun.js"></script>
+  <link href="../static/css/firstRun.css" type="text/css" rel="stylesheet" />
+
+  <!--[if lt IE 7]>
+    <script src="../static/js/vendor/DD_belatedPNG.js"></script>
+    <script>DD_belatedPNG.fix("#logo, .share-image");</script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="../static/js/vendor/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <div id="logo"></div>
+      <h1 id="title-main"></h1>
+    </header>
+
+    <p id="acceptableAdsExplanation">
+      <h3 id="aa-title" align="center"></h3>
+      <p id="aa-text"></p>
+    </p>
+
+  </div>
+
+  <div id="share">
+    <p id="share-text"></p>
+    <div id="share-images">
+      <a id="share-donate" target="_blank"></a>
+      <span id="share-connection"></span>
+      <a id="share-facebook" class="share-image" href="https://www.facebook.com/adblockplus" target="_blank"></a>
+      <a id="share-twitter" class="share-image" href="https://twitter.com/adblockplus" target="_blank"></a>
+      <a id="share-gplus" class="share-image" href="https://www.google.com/+AdblockPlus" target="_blank"></a>
+    </div>
+  </div>
+
+  <div id="glass-pane">
+    <iframe id="share-popup" scrolling="no"></iframe>
+  </div>
+</body>
+</html>

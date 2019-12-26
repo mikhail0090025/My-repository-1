@@ -1,0 +1,8 @@
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\bin\Debug\SoundGenerator.exe.config
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\bin\Debug\SoundGenerator.exe
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\bin\Debug\SoundGenerator.pdb
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\obj\Debug\SoundGenerator.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\obj\Debug\SoundGenerator.MainForm.resources
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\obj\Debug\SoundGenerator.csproj.GenerateResource.Cache
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\obj\Debug\SoundGenerator.exe
+D:\GitHubProjects\C#\SoundGenerator\SoundGenerator\obj\Debug\SoundGenerator.pdb

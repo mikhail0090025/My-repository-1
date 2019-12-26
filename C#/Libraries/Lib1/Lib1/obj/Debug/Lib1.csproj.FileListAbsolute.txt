@@ -1,0 +1,7 @@
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\obj\Debug\Lib1.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\bin\Debug\Lib1.dll
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\bin\Debug\Lib1.pdb
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\obj\Debug\Lib1.dll
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\obj\Debug\Lib1.pdb
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\obj\Debug\Lib1.UserControl1.resources
+D:\GitHubProjects\C#\Libraries\Lib1\Lib1\obj\Debug\Lib1.csproj.GenerateResource.Cache

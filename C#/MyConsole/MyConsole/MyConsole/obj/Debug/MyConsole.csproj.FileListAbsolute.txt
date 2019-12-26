@@ -1,0 +1,6 @@
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\bin\Debug\MyConsole.exe.config
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\bin\Debug\MyConsole.exe
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\bin\Debug\MyConsole.pdb
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\obj\Debug\MyConsole.csprojResolveAssemblyReference.cache
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\obj\Debug\MyConsole.exe
+D:\GitHubProjects\C#\MyConsole\MyConsole\MyConsole\obj\Debug\MyConsole.pdb
