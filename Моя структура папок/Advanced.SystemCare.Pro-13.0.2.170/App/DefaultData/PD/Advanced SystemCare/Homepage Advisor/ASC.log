@@ -1,7 +1,0 @@
-19-02-24 17:48:20.415  HPCli:[1,3092,Foxx]: 
-19-02-24 17:48:20.415  HPCli:[1,3092,Foxx]: "C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASC.exe"
-19-02-24 17:48:20.415  HPCli:[1,3092,Foxx]: Ver:12, SvcVer:12, Exe:12.2.0.315,12.2.0.315, Win: 6.1.7601, Service Pack 1, 
-19-02-24 17:48:20.415  HPCli:[1,3092,Foxx]: not found setup info!
-19-02-24 17:48:20.415  HPCli:[1,3092,Foxx]: OpenService, ServerI:12, Server:12, ClientI:12, Client:12
-19-02-24 17:48:20.431  HPCli:[1,3092,Foxx]: service need fix:byte:328, Start:2, type:10, regpath:C:\Users\Foxx\Desktop\ASCPROPortable 2\App\AdvancedSystemCare\ASCService.exe, newpath:C:\Users\Foxx\Desktop\ASCPROPortable\App\AdvancedSystemCare\ASCService.exe 
-19-02-24 17:48:20.649  HPCli:[1,3092,Foxx]: Fix StartService fail: Не удается найти указанный файл

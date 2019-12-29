@@ -1,7 +1,0 @@
-{
-	"name":"com.ascplugin.protect",
-	"path":"FF_SPNativeMessage.exe",
-	"description":"Firefox Sp native message application",
-	"type": "stdio",
-	"allowed_extensions":["ascsurfingprotectionnew@iobit.com"]
-}
